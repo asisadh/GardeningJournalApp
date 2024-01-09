@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.aashish.gardeningjournalapp.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_gardenLogFragment"
+            app:destination="@id/gardenLogFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_plantDetailsFragment"
+            app:destination="@id/plantDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gardenLogFragment"
+        android:name="com.aashish.gardeningjournalapp.fragments.GardenLogFragment"
+        android:label="fragment_garden_log"
+        tools:layout="@layout/fragment_garden_log" >
+        <action
+            android:id="@+id/action_gardenLogFragment_to_plantDetailsFragment"
+            app:destination="@id/plantDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/plantDetailsFragment"
+        android:name="com.aashish.gardeningjournalapp.fragments.PlantDetailsFragment"
+        android:label="fragment_plant_details"
+        tools:layout="@layout/fragment_plant_details" />
+</navigation>
