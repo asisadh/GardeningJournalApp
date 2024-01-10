@@ -7,11 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.aashish.gardeningjournalapp.R
 
-/**
- * A simple [Fragment] subclass.
- * Use the [PlantDetailsFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class PlantDetailsFragment : Fragment() {
 
     override fun onCreateView(
@@ -19,6 +14,6 @@ class PlantDetailsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_plant_details, container, false)
+        return inflater.inflate(R.layout.item_plant, container, false)
     }
 }
