@@ -42,6 +42,7 @@ This app has provides information about the plants such as the plants name, type
 
 ## Project Pages:
 ### Home Page
+![](https://github.com/asisadh/GardeningJournalApp/blob/main/screen-shots/home.png?raw=true)
 
 ### Log Page
 
