@@ -45,8 +45,13 @@ This app has provides information about the plants such as the plants name, type
 ![](https://github.com/asisadh/GardeningJournalApp/blob/main/screen-shots/home.png?raw=true)
 
 ### Log Page
+![](https://github.com/asisadh/GardeningJournalApp/blob/main/screen-shots/logs.png?raw=true)
+
+### Add a new Plant
+![](https://github.com/asisadh/GardeningJournalApp/blob/main/screen-shots/Add-plant.png?raw=true)
 
 ### Detail Page
+![](https://github.com/asisadh/GardeningJournalApp/blob/main/screen-shots/detail.png?raw=true)
 
 ## Build and Running the page:
 You can simple open the project in the Android Studio. Install all the gardle dependencies and execute the project itself through the Android Studio.
@@ -56,3 +61,11 @@ In the project structure if you look at the `data` package. This package provide
 In `domain` layer (package). The Plant Entity is transfered to an DTO object and a plant Repository is present to do all the database related queries for the Room Database.
 In `UI` layer we are using the view models to fetch the data from database and populate it into the UI. View model executes the fetching calls as coroutines such that main thread is never blocked.
 
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
