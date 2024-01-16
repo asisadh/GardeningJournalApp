@@ -1,10 +1,12 @@
-package com.aashish.gardeningjournalapp
+package com.aashish.gardeningjournalapp.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
+import com.aashish.gardeningjournalapp.R
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        return super.onSupportNavigateUp()
+        return navController.navigateUp()
+//        return super.onSupportNavigateUp()
     }
 }

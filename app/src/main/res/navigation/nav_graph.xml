@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.aashish.gardeningjournalapp.fragments.HomeFragment"
+        android:name="com.aashish.gardeningjournalapp.ui.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -19,16 +19,36 @@
     </fragment>
     <fragment
         android:id="@+id/gardenLogFragment"
-        android:name="com.aashish.gardeningjournalapp.fragments.GardenLogFragment"
+        android:name="com.aashish.gardeningjournalapp.ui.fragments.GardenLogFragment"
         android:label="fragment_garden_log"
         tools:layout="@layout/fragment_garden_log" >
         <action
             android:id="@+id/action_gardenLogFragment_to_plantDetailsFragment"
             app:destination="@id/plantDetailsFragment" />
+        <action
+            android:id="@+id/action_gardenLogFragment_to_addPlantFragment"
+            app:destination="@id/addPlantFragment" />
     </fragment>
     <fragment
         android:id="@+id/plantDetailsFragment"
-        android:name="com.aashish.gardeningjournalapp.fragments.PlantDetailsFragment"
+        android:name="com.aashish.gardeningjournalapp.ui.fragments.PlantDetailsFragment"
         android:label="fragment_plant_details"
-        tools:layout="@layout/fragment_plant_details" />
+        tools:layout="@layout/fragment_plant_details" >
+        <action
+            android:id="@+id/action_plantDetailsFragment_to_gardenLogFragment"
+            app:destination="@id/gardenLogFragment" />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/addPlantFragment"
+        android:name="com.aashish.gardeningjournalapp.ui.fragments.AddPlantFragment"
+        android:label="fragment_add_plant"
+        tools:layout="@layout/fragment_add_plant" >
+        <action
+            android:id="@+id/action_addPlantFragment_to_gardenLogFragment"
+            app:destination="@id/gardenLogFragment" />
+    </fragment>
 </navigation>
